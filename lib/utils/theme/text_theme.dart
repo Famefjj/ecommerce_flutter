@@ -5,7 +5,16 @@ import 'app_colors.dart';
 class AppTextTheme {
   AppTextTheme._();
 
-  static const String fontFamily = 'PlusJakartaSans';
+  static const String fontFamily = 'MonaSans';
+
+  static const TextStyle _baseTextStyle = TextStyle(
+    fontFamily: fontFamily,
+  );
+
+  static final TextStyle buttonTextStyle = _baseTextStyle.copyWith(
+    fontSize: 16,
+    fontWeight: FontWeight.w600,
+  );
 
   static final TextTheme lightTextTheme = _buildTextTheme(
     AppColors.lightTextPrimary,
@@ -19,47 +28,46 @@ class AppTextTheme {
 
   static TextTheme _buildTextTheme(Color primaryText, Color secondaryText) {
     return TextTheme(
-      headlineLarge: TextStyle(
+      headlineLarge: _baseTextStyle.copyWith(
         color: primaryText,
         fontSize: 32,
         fontWeight: FontWeight.w700,
       ),
-      headlineMedium: TextStyle(
+      headlineMedium: _baseTextStyle.copyWith(
         color: primaryText,
         fontSize: 28,
         fontWeight: FontWeight.w700,
       ),
-      titleLarge: TextStyle(
+      titleLarge: _baseTextStyle.copyWith(
         color: primaryText,
         fontSize: 22,
         fontWeight: FontWeight.w700,
       ),
-      titleMedium: TextStyle(
+      titleMedium: _baseTextStyle.copyWith(
         color: primaryText,
         fontSize: 16,
         fontWeight: FontWeight.w600,
       ),
-      bodyLarge: TextStyle(
+      bodyLarge: _baseTextStyle.copyWith(
         color: primaryText,
         fontSize: 16,
         fontWeight: FontWeight.w400,
       ),
-      bodyMedium: TextStyle(
+      bodyMedium: _baseTextStyle.copyWith(
         color: primaryText,
         fontSize: 14,
         fontWeight: FontWeight.w400,
       ),
-      bodySmall: TextStyle(
+      bodySmall: _baseTextStyle.copyWith(
         color: secondaryText,
         fontSize: 12,
         fontWeight: FontWeight.w400,
       ),
-      labelLarge: TextStyle(
-        color: primaryText,
+      labelLarge: buttonTextStyle.copyWith(
+        color: primaryText, 
         fontSize: 14,
-        fontWeight: FontWeight.w600,
-      ),
-      labelMedium: TextStyle(
+        ),
+      labelMedium: _baseTextStyle.copyWith(
         color: secondaryText,
         fontSize: 12,
         fontWeight: FontWeight.w600,
