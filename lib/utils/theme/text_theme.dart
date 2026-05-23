@@ -12,7 +12,7 @@ class AppTextTheme {
   );
 
   static final TextStyle buttonTextStyle = _baseTextStyle.copyWith(
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: FontWeight.w600,
   );
 

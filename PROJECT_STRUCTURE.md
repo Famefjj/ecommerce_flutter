@@ -20,6 +20,7 @@ ecommerce_flutter/
     icons/                 App icons
     images/                App images
     logos/                 Brand and app logos
+      ecom_logo_dark.png   Raster splash logo used by flutter_native_splash
 
   lib/
     main.dart              App entry point
@@ -56,9 +57,12 @@ ecommerce_flutter/
     utils/
       constants/           App constants
       device/              Device and platform helpers
+        device_utility.dart  Device sizing, platform, keyboard, and system UI helpers
       formatters/          Text, date, price, and input formatters
       helpers/             General helper functions
+        app_helpers.dart   UI, navigation, text, list, and ecommerce calculation helpers
       http/                HTTP client and network helpers
+        http_helper.dart   JSON HTTP request helper and API exception handling
       local_storage/       Local persistence helpers
       logging/             Logging utilities
       theme/               App theme modules
@@ -71,6 +75,7 @@ ecommerce_flutter/
         text_theme.dart
         theme.dart
       validators/          Form and input validators
+        validator_utils.dart  Reusable TextFormField validation helpers
 
   test/
     widget_test.dart       Flutter widget tests

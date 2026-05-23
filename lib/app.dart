@@ -1,4 +1,4 @@
-import 'package:ecommerce_flutter/utils/theme/ecom_logo_paint.dart';
+import 'package:ecommerce_flutter/features/authentication/pages/login/login_page.dart';
 import 'package:ecommerce_flutter/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -25,18 +25,8 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('ECOM app'),
-      ),
-      body: Center(
-        child: SizedBox(
-          width: 120,
-          height: 120,
-          child: CustomPaint(
-            painter: EcomLogoPainter(strokeColor: AppColors.primary),
-          ),
-        )
-      ),
+      backgroundColor: AppColors.lightBackground,
+      body: LoginPage()
     );
   }
 }

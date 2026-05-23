@@ -6,9 +6,9 @@ import 'text_theme.dart';
 class AppButtonTheme {
   AppButtonTheme._();
 
-  static const double _buttonHeight = 48;
-  static const double _buttonRadius = 8;
-  static const double _iconButtonSize = 48;
+  static const double _buttonHeight = 56;
+  static const double _buttonRadius = 14;
+  static const double _iconButtonSize = 56;
 
   static const EdgeInsetsGeometry _buttonPadding = EdgeInsets.symmetric(
     horizontal: 24,
