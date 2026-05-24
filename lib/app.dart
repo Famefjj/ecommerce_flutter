@@ -1,4 +1,6 @@
-import 'package:ecommerce_flutter/features/authentication/pages/login/login_page.dart';
+import 'package:ecommerce_flutter/common/widgets/app_navigation_menu.dart';
+import 'package:ecommerce_flutter/data/mocks/mock_page.dart';
+import 'package:ecommerce_flutter/features/shop/pages/home_page.dart';
 import 'package:ecommerce_flutter/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -14,19 +16,12 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
-      home: const HomePage(),
-    );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: AppColors.lightBackground,
-      body: LoginPage()
+      home: AppNavigationMenu(pages: [
+        HomePage(), 
+        MockPage(title: "Favorite"), 
+        MockPage(title: "Settings"),
+        ],
+      )
     );
   }
 }

@@ -9,7 +9,6 @@ class SignupPage extends StatefulWidget {
 }
 
 class _SignupPageState extends State<SignupPage> {
-  bool _acceptTerms = true;
   bool _obscurePassword = true;
 
   @override
@@ -169,9 +168,7 @@ class _SignupPageState extends State<SignupPage> {
         tooltip: _obscurePassword ? 'Show password' : 'Hide password',
         onPressed: _togglePasswordVisibility,
         icon: Icon(
-          _obscurePassword
-              ? CupertinoIcons.eye_slash
-              : CupertinoIcons.eye,
+          _obscurePassword ? CupertinoIcons.eye_slash : CupertinoIcons.eye,
           color: colorScheme.onSurfaceVariant,
           size: 22,
         ),

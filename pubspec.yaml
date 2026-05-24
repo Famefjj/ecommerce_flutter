@@ -13,9 +13,9 @@ dependencies:
   http: ^1.6.0
   intl: ^0.20.2
   logger: ^2.7.0
-  get: ^4.7.3
   flutter_secure_storage: ^10.3.0
   flutter_svg: ^2.2.0
+  provider: ^6.1.5+1
   flutter_native_splash: ^2.4.7
 
 dev_dependencies:
@@ -28,6 +28,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
+    - assets/images/categories/
     - assets/icons/
     - assets/logos/
 

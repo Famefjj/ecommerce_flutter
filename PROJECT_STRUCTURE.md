@@ -19,8 +19,17 @@ ecommerce_flutter/
       MonaSans-Bold.ttf
     icons/                 App icons
     images/                App images
+      categories/          Category images shown on the shop home page
+        computer_parts.jpg
+        laptops.jpg
+        networking.jpg
+        smartphones.jpg
+        storage.jpg
+        tablets.jpg
     logos/                 Brand and app logos
-      ecom_logo_dark.png   Raster splash logo used by flutter_native_splash
+      ecom_logo_dark.png   Raster brand/app logo
+      splash_logo.png      Centered logo used by flutter_native_splash
+      splash_logo_padded.png Padded splash logo to avoid native icon clipping
 
   lib/
     main.dart              App entry point
@@ -82,6 +91,7 @@ ecommerce_flutter/
 
   pubspec.yaml             Dependencies, assets, and fonts
   pubspec.lock             Locked dependency versions
+  flutter_native_splash.yaml Native splash screen generator config
   analysis_options.yaml    Dart analyzer and lint rules
   README.md                Project overview
 ```
